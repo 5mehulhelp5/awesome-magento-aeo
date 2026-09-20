@@ -12,7 +12,7 @@ abstract: >-
   A curated list of modules, specifications and tools that make a Magento 2 or
   Adobe Commerce store discoverable, readable and transactable by AI systems.
   Covers llms.txt generation, AI crawler policy, structured data, ACP product
-  feeds, agentic checkout, MCP servers and AEO auditing.
+  feeds, agentic commerce, MCP servers and AEO auditing.
 keywords:
   - magento
   - magento2

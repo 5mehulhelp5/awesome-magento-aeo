@@ -26,7 +26,7 @@ jobs:
           STATS = re.compile(r'^\*\*\d+ projects tracked\*\*.*$')
           ANCHOR = 'Last reviewed:'
           SKIP = {'Contents', 'Reading', 'Related Lists', 'Contributing',
-                  'License', 'How to Choose', 'At a Glance'}
+                  'License', 'How to Choose', 'At a Glance', 'Footnotes'}
 
           original = open(PATH, encoding='utf-8').read()
           lines = original.split('\n')
@@ -43,7 +43,7 @@ jobs:
           stats = (f"**{total} projects tracked** — "
                    f"{items.get('Discovery Files', 0)} discovery file implementations, "
                    f"{items.get('MCP Servers', 0)} MCP servers, "
-                   f"{items.get('Agentic Checkout', 0)} agentic checkout projects, "
+                   f"{items.get('Agentic Commerce', 0)} agentic commerce projects, "
                    f"{items.get('Specifications and Standards', 0)} specifications.")
 
           out, seen, i = [], False, 0
@@ -91,7 +91,7 @@ jobs:
           STATS = re.compile(r'^\*\*\d+ projects tracked\*\*.*$')
           ANCHOR = 'Last reviewed:'
           SKIP = {'Contents', 'Reading', 'Related Lists', 'Contributing',
-                  'License', 'How to Choose', 'At a Glance'}
+                  'License', 'How to Choose', 'At a Glance', 'Footnotes'}
 
           original = open(PATH, encoding='utf-8').read()
           lines = original.split('\n')
@@ -108,7 +108,7 @@ jobs:
           stats = (f"**{total} projects tracked** — "
                    f"{items.get('Discovery Files', 0)} discovery file implementations, "
                    f"{items.get('MCP Servers', 0)} MCP servers, "
-                   f"{items.get('Agentic Checkout', 0)} agentic checkout projects, "
+                   f"{items.get('Agentic Commerce', 0)} agentic commerce projects, "
                    f"{items.get('Specifications and Standards', 0)} specifications.")
 
           out, seen, i = [], False, 0

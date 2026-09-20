@@ -13,7 +13,7 @@ Out of scope: general Magento extensions, general SEO tooling with no AI surface
 An entry needs all of:
 
 1. **Public and reachable.** A working repository, marketplace listing or product page.
-2. **Real, not announced.** Installable or usable today. Work in progress is welcome but must be labelled.
+2. **Real, not announced.** Installable or usable today. Projects that are announced, coming soon or labelled in progress by their own maintainers go to [WATCHLIST.md](WATCHLIST.md) until they are ready.
 3. **Specific.** It does something concrete for AI discovery or agentic commerce, not a page claiming to be AI-powered.
 4. **Honest about maintenance.** Archived projects may stay if they remain the reference implementation of something, labelled as such.
 
@@ -22,14 +22,16 @@ Commercial products are welcome and sit in the same functional sections as free 
 ## Entry format
 
 ```
-- [name](url) - Description, capitalised, ending in a period. Status or license last.
+- [name](url) - Description, capitalized, ending in a period. License, status.
 ```
 
 - One line. If it needs two, it needs a shorter description.
-- Composer `vendor/package` for modules, product name for commercial extensions.
+- The name matches the link: `owner/repo` for GitHub repositories, Composer `vendor/package` for Packagist-only modules, the product name for commercial extensions and hosted tools.
+- In MCP Servers, the description starts with `Storefront.` or `Admin.`
 - No superlatives, no marketing verbs, no emoji.
 - Alphabetical within each section, case-insensitive, with one exception: entries maintained by the list maintainer are placed last in their section, regardless of name. This is deliberate. Alphabetical order would otherwise put `angeo/` first almost everywhere, which is not a fact about the projects.
-- Status labels: `MIT.` `Commercial.` `In progress.` `Experimental.` `Archived.`
+- License and status last, in the form `MIT, released.` Status words are the maintainers' own: `released`, `in progress`, `experimental`, `archived`, or `no stated status` when the project makes no claim. Commercial products end with `Commercial.`
+- American spelling (`catalog`, `license`).
 - No trailing slashes in URLs. The linter rejects them.
 - Describe what it does, not what it lets you imagine.
 
